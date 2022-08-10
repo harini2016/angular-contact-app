@@ -1,0 +1,20 @@
+<h2>New Contact</h2>
+
+<div>
+  <label for="new-contact">First name: </label>
+  <input id="firstname" #fname />
+
+  <label for="new-contact">Last name: </label>
+  <input id="lastname" #lname />
+
+  <label for="new-contact">Email: </label>
+  <input id="email" #email />
+
+  <label for="new-contact">Phone: </label>
+  <input id="phone" #phone />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="add-button btn btn-outline-primary" (click)="add(fname.value, lname.value, email.value, phone.value); fname.value=''; lname.value=''; email.value=''; phone.value=''">
+    Add Contact
+  </button>
+</div>

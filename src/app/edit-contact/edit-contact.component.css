@@ -1,0 +1,36 @@
+/* Contact DetailComponent's private CSS styles */
+label {
+  color: #435960;
+  font-weight: bold;
+  margin-right: 1rem;
+  color: #007bff;
+}
+input {
+  font-size: 1em;
+  padding: .5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  display: block;
+}
+button {
+  /* margin-top: 20px; */
+  margin-right: .5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.contact-field {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

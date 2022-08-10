@@ -1,0 +1,21 @@
+<div *ngIf="contact">
+  <h2>Contact Details</h2>
+  <div><span>Id: </span>{{contact.id}}</div>
+  <div class="contact-field">
+    <label for="contact-name">First name: </label>
+    <input id="contact-name" [(ngModel)]="contact.name" placeholder="First Name" readonly/>
+  </div>
+  <div class="contact-field">
+    <label for="contact-name">Last name: </label>
+    <input id="contact-name" [(ngModel)]="contact.lname" placeholder="Last Name" readonly/>
+  </div>
+  <div class="contact-field">
+    <label for="contact-name">Email: </label>
+    <input id="contact-name" [(ngModel)]="contact.email" placeholder="Email" readonly/>
+  </div>
+  <div class="contact-field">
+    <label for="contact-name">Phone: </label>
+    <input id="contact-name" [(ngModel)]="contact.phone" placeholder="Phone" readonly/>
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
